@@ -9,8 +9,8 @@ z2
 cModel Technology
 dE:/modelsim-labs/lab-3-part-3
 Eai
-Z0 w1574011436
-Z1 DPx4 work 10 game_utils 0 22 T>DUDGkD[_nb0oEG_cle42
+Z0 w1574013320
+Z1 DPx4 work 10 game_utils 0 22 hT:>f3hRS>=?BlREYfzXc2
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z4 dE:/kursach
@@ -22,9 +22,9 @@ VHGM?QQ@]zNLe0jfAA9=o?2
 !s100 =Y@?0A=1jj[1L6mW6ZW<63
 Z7 OP;C;10.4a;61
 32
-Z8 !s110 1574011441
+Z8 !s110 1574025214
 !i10b 1
-Z9 !s108 1574011441.000000
+Z9 !s108 1574025214.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\kursach\ai.vhd|
 Z11 !s107 E:\kursach\ai.vhd|
 !i113 1
@@ -35,10 +35,10 @@ R1
 R2
 R3
 DEx4 work 2 ai 0 22 HGM?QQ@]zNLe0jfAA9=o?2
-l17
+l22
 L13
-Vk6DO6U>1h@GJM6^fH2EFK0
-!s100 U^XD<@MXCLJ3bDn4^m9K[3
+VP`icMkYAj<Z[YHK1o<F`03
+!s100 YB<U8QPHi>IZQ5d8Y3Y?00
 R7
 32
 R8
@@ -49,15 +49,54 @@ R11
 !i113 1
 R12
 R13
+Pboard_utils
+R1
+Z14 w1574024842
+R4
+Z15 8E:\kursach\board_utils.vhd
+Z16 FE:\kursach\board_utils.vhd
+l0
+L4
+VCNHR@oXe8d;<^a`3=9HUh1
+!s100 KEbg<5_Sf4WD1NQb5R[iR3
+R7
+32
+b1
+Z17 !s110 1574025215
+!i10b 1
+Z18 !s108 1574025215.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\kursach\board_utils.vhd|
+Z20 !s107 E:\kursach\board_utils.vhd|
+!i113 1
+R12
+R13
+Bbody
+Z21 DPx4 work 11 board_utils 0 22 CNHR@oXe8d;<^a`3=9HUh1
+R1
+l0
+L37
+V<L5HFTJXOkS;<^AfGn21D0
+!s100 IIg@EJUK`QNSH_a9lFWDl0
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+nbody
 Pgame_utils
-w1574009789
+w1574013223
 R4
 8E:\kursach\course_package.vhd
 FE:\kursach\course_package.vhd
 l0
 L1
-VT>DUDGkD[_nb0oEG_cle42
-!s100 igUeT:FW:oOojPfo=3:TQ0
+VhT:>f3hRS>=?BlREYfzXc2
+!s100 JK>X3ZVGTPF1P71HMeSXK1
 R7
 32
 R8
@@ -69,24 +108,24 @@ R9
 R12
 R13
 Eminmaxengine
-Z14 w1574010724
+Z22 w1574023950
 R1
 R2
 R3
 R4
-Z15 8E:\kursach\MinMaxEngine.vhd
-Z16 FE:\kursach\MinMaxEngine.vhd
+Z23 8E:\kursach\MinMaxEngine.vhd
+Z24 FE:\kursach\MinMaxEngine.vhd
 l0
 L7
-V6bXWXcFc5mG9GhB;FEgJB3
-!s100 FiWl]G0;88h=@<LPNgQE>3
+V4lfl=<fiFg3]joK7EA@211
+!s100 Cga7V7F^X6CzCPCj_3kWh2
 R7
 32
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\kursach\MinMaxEngine.vhd|
-Z18 !s107 E:\kursach\MinMaxEngine.vhd|
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\kursach\MinMaxEngine.vhd|
+Z26 !s107 E:\kursach\MinMaxEngine.vhd|
 !i113 1
 R12
 R13
@@ -94,18 +133,57 @@ Aminmaxengine_behaviour
 R1
 R2
 R3
-Z19 DEx4 work 12 minmaxengine 0 22 6bXWXcFc5mG9GhB;FEgJB3
-l11
-L10
-Z20 V:NmK9zUi<8bXTT^02T`<_1
-Z21 !s100 ^Ln;7WDPb^iR[_a9bMZ9c2
+DEx4 work 12 minmaxengine 0 22 4lfl=<fiFg3]joK7EA@211
+l14
+L12
+VKgkB1]j53VUQ64`]lU<eD3
+!s100 mAVP[Dz92kk2@;lCoZZE51
 R7
 32
 R8
 !i10b 1
 R9
+R25
+R26
+!i113 1
+R12
+R13
+Etest123
+Z27 w1574025201
+R1
+R21
+R4
+Z28 8E:\kursach\test_generate_moves.vhd
+Z29 FE:\kursach\test_generate_moves.vhd
+l0
+L7
+V^jF8k^R=ZCB?cRjXWNZR00
+!s100 Vh`nQ=Bz3N=7;HHH6KT]81
+R7
+32
 R17
+!i10b 1
 R18
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\kursach\test_generate_moves.vhd|
+Z31 !s107 E:\kursach\test_generate_moves.vhd|
+!i113 1
+R12
+R13
+Aqwe
+R1
+R21
+DEx4 work 7 test123 0 22 ^jF8k^R=ZCB?cRjXWNZR00
+l14
+L12
+Z32 V3fm:386;16>?1Y32nAEfM0
+Z33 !s100 >XT37EeE?Zi?O^7_M5?lX1
+R7
+32
+R17
+!i10b 1
+R18
+R30
+R31
 !i113 1
 R12
 R13
