@@ -1,0 +1,9 @@
+package game_utils is
+
+    constant BOARD_SIZE : natural := 3;
+
+    type CELL_STATE is (EMPTY, CROSS, ZERO);
+
+    type Board is array(natural range 3 to 15, natural range 3 to 15) of CELL_STATE;
+
+end package game_utils;
