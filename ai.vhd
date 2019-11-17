@@ -12,11 +12,7 @@ end AI;
 
 architecture AI_behaviour of AI is
 
-    signal game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1) := (
-        (EMPTY, EMPTY, EMPTY),
-        (EMPTY, EMPTY, EMPTY),
-        (EMPTY, EMPTY, EMPTY)
-    );
+    signal game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1);
 
     begin
         game_board(Y, X) <= HUMAN_PLAYER;

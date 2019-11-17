@@ -9,7 +9,7 @@ z2
 cModel Technology
 dE:/modelsim-labs/lab-3-part-3
 Eai
-Z0 w1574010758
+Z0 w1574011436
 Z1 DPx4 work 10 game_utils 0 22 T>DUDGkD[_nb0oEG_cle42
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VHGM?QQ@]zNLe0jfAA9=o?2
 !s100 =Y@?0A=1jj[1L6mW6ZW<63
 Z7 OP;C;10.4a;61
 32
-Z8 !s110 1574010777
+Z8 !s110 1574011441
 !i10b 1
-Z9 !s108 1574010777.000000
+Z9 !s108 1574011441.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\kursach\ai.vhd|
 Z11 !s107 E:\kursach\ai.vhd|
 !i113 1
@@ -35,10 +35,10 @@ R1
 R2
 R3
 DEx4 work 2 ai 0 22 HGM?QQ@]zNLe0jfAA9=o?2
-l21
+l17
 L13
-VIj><;QPUo>I>SOaM4>X[n1
-!s100 Pi`RHUR5[31@ma300DH2Z2
+Vk6DO6U>1h@GJM6^fH2EFK0
+!s100 U^XD<@MXCLJ3bDn4^m9K[3
 R7
 32
 R8
