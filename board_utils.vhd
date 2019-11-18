@@ -7,7 +7,6 @@ package board_utils is
 
     type Available_Cells is array(0 to ((BOARD_SIZE * BOARD_SIZE) - 1)) of Cell_Coordinates;
 
-
     function checkColumn(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); column : natural; player : CELL_STATE)
     return boolean;
 

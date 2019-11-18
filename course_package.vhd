@@ -11,10 +11,10 @@ package game_utils is
     constant AI_PLAYER : CELL_STATE := CROSS;
 
     type Engine_Answer is record
-        Y : natural;
-        X : natural;
+        Y : integer;
+        X : integer;
     end record Engine_Answer;
 
-    constant Engine_Answer_const : Engine_Answer := (Y => 0, X => 0);
+    constant Engine_Answer_const : Engine_Answer := (Y => -1, X => -1);
 
 end package game_utils;
