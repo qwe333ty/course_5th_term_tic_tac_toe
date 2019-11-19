@@ -4,6 +4,8 @@ use work.game_utils.all;
 
 package min_max_engine_utils is
 
+    type MinMaxAnswer is array(0 to 2) of integer;
+
     function getRowPoints(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); row : natural)
     return Available_Cells;
 

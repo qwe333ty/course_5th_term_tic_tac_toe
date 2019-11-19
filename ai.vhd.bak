@@ -6,17 +6,15 @@ use work.game_utils.all;
 use work.board_utils.all;
 use work.min_max_engine_utils.all;
 
-entity MinMaxEngine is
-    port(game_board : in Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1);
-         human_x : in natural;
-         human_y : in natural;
-         answer : out MinMaxAnswer := (0, -1, -1);
-         output_board : out Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1));
-end MinMaxEngine;
+entity AI is
+    port(X : in natural;
+         Y : in natural;
+         current_board : out Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1));
+end AI;
 
-architecture MinMaxEngine_behaviour of MinMaxEngine is
-    
-    function min_max_move(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); depth : natural; player : CELL_STATE)
+architecture AI_behaviour of AI is
+
+        function min_max_move(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); depth : natural; player : CELL_STATE)
     return MinMaxAnswer is
 
         variable nextMoves : Available_Cells;
@@ -77,6 +75,17 @@ architecture MinMaxEngine_behaviour of MinMaxEngine is
         return answer;
     end;
 
+
+    signal game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1);
+
     begin
-        answer <= min_max_move(game_board, BOARD_SIZE - 1, AI_PLAYER);
-end MinMaxEngine_behaviour;
+        main_process : process (X, Y)
+            variable answer : MinMaxAnswer;
+            begin
+                report "Hello!" & game_board(Y, X);
+                game_board(Y, X) <= HUMAN_PLAYER;
+                answer := min_max_move(game_board, (BOARD_SIZE - 1), AI_PLAYER);
+                game_board(answer(1), answer(2)) <= AI_PLAYER;
+                current_board <= game_board;
+        end process main_process;
+end AI_behaviour;

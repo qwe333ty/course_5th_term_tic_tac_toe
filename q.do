@@ -1,4 +1,4 @@
-vsim work.Test123
+vsim work.AI
 
 view objects
 view wave -undock

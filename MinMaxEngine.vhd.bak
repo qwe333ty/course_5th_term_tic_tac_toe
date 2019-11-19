@@ -8,10 +8,7 @@ use work.min_max_engine_utils.all;
 
 entity MinMaxEngine is
     port(game_board : in Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1);
-         human_x : in natural;
-         human_y : in natural;
-         answer : out MinMaxAnswer := (0, -1, -1);
-         output_board : out Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1));
+         answer : out Engine_Answer := Engine_Answer_const);
 end MinMaxEngine;
 
 architecture MinMaxEngine_behaviour of MinMaxEngine is
@@ -30,8 +27,6 @@ architecture MinMaxEngine_behaviour of MinMaxEngine is
         variable tempAnswer : MinMaxAnswer;
         variable answer : MinMaxAnswer;
 
-        variable boardCopy : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1);
-
         begin
             nextMoves := generateMoves(game_board);
 
@@ -41,33 +36,32 @@ architecture MinMaxEngine_behaviour of MinMaxEngine is
                 bestScore := integer'high;
             end if;
 
-            if isCellsListEmpty(nextMoves) or depth = 0 then
-                bestScore := evaluateBoard(game_board);
+            if isCellsListEmpty(nextMoves) and depth = 0 then
+                bestScore := evaluateBoard();
             else
-                boardCopy := cloneGameBoard(game_board);
                 for temp in 0 to (nextMoves'length - 1) loop
                     move := nextMoves(temp);
                     if move(0) = -1 and move(1) = -1 then
                         exit;
                     end if;
                     
-                    boardCopy(move(0), move(1)) := player;
+                    game_board(move(0), move(1)) := player;
                     if player = AI_PLAYER then
-                        tempAnswer := min_max_move(boardCopy, depth - 1, HUMAN_PLAYER);
+                        tempAnswer := min_max_move(game_board, depth - 1, HUMAN_PLAYER);
                         if tempAnswer(0) > bestScore then
-                            bestScore := tempAnswer(0);
-                            bestRow := move(0);
-                            bestColumn := move(1);
+                            bestScore = tempAnswer(0);
+                            bestRow = move(0);
+                            bestColumn = move(1);
                         end if;
                     else
-                        tempAnswer := min_max_move(boardCopy, depth - 1, AI_PLAYER);
+                        tempAnswer := min_max_move(game_board, depth - 1, AI_PLAYER);
                         if tempAnswer(0) < bestScore then
-                            bestScore := tempAnswer(0);
-                            bestRow := move(0);
-                            bestColumn := move(1);
+                            bestScore = tempAnswer(0);
+                            bestRow = move(0);
+                            bestColumn = move(1);
                         end if;
                     end if;
-                    boardCopy(move(0), move(1)) := EMPTY;
+                    game_board(move(0), move(1)) := EMPTY;
                 end loop;
             end if;
 
@@ -78,5 +72,4 @@ architecture MinMaxEngine_behaviour of MinMaxEngine is
     end;
 
     begin
-        answer <= min_max_move(game_board, BOARD_SIZE - 1, AI_PLAYER);
 end MinMaxEngine_behaviour;

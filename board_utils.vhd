@@ -31,6 +31,12 @@ package board_utils is
     function generateMoves(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1))
     return Available_Cells;
 
+    function isCellsListEmpty(cells : Available_Cells)
+    return boolean;
+
+    function cloneGameBoard(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1))
+    return Board;
+
 end package board_utils;
 
 package body board_utils is
@@ -141,7 +147,6 @@ package body board_utils is
             rows: for row in 0 to (BOARD_SIZE - 1) loop
                 columns: for column in 0 to (BOARD_SIZE - 1) loop
                     if game_board(row, column) = EMPTY then
-                        report "empty cell found";
                         cells(counter) := (row, column);
                         counter := counter + 1;
                     end if;
@@ -149,5 +154,29 @@ package body board_utils is
             end loop rows;
         return cells;
     end;
+
+    function isCellsListEmpty(cells : Available_Cells)
+    return boolean is
+        begin
+            if cells(0)(0) = -1 and cells (0)(1) = -1 then
+                return true;
+            else
+                return false;
+            end if;
+    end;
+
+    function cloneGameBoard(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1))
+    return Board is
+
+        variable boardCopy : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1);
+
+        begin
+            for row in 0 to BOARD_SIZE - 1 loop
+                for column in 0 to BOARD_SIZE - 1 loop
+                    boardCopy(row, column) := game_board(row, column);
+                end loop;
+            end loop;
+        return boardCopy;
+    end;    
 
 end package body board_utils;
