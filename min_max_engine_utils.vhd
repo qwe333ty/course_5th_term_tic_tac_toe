@@ -96,6 +96,26 @@ package body min_max_engine_utils is
                     next evaluation_loop;
                 end if;
 
+                if temp = 1 then
+                    if game_board(coordinates(0), coordinates(1)) = AI_PLAYER then
+                        if score = 1 then
+                            score := 10;
+                        elsif score = -1 then
+                            return 0;
+                        else
+                            score := 1;
+                        end if;
+                    elsif game_board(coordinates(0), coordinates(1)) = HUMAN_PLAYER then
+                        if score = -1 then
+                            score := -10;
+                        elsif score = 1 then
+                            return 0;
+                        else
+                            score := -1;
+                        end if;
+                    end if;
+                end if;
+
                 if game_board(coordinates(0), coordinates(1)) = AI_PLAYER then
                     if score > 0 then
                         score := score * 10;
@@ -107,7 +127,7 @@ package body min_max_engine_utils is
                 elsif game_board(coordinates(0), coordinates(1)) = HUMAN_PLAYER then
                     if score < 0 then
                         score := score * 10;
-                    elsif score >= 1 then
+                    elsif score > 1 then
                         return 0;
                     else
                         score := -1;

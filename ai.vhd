@@ -89,7 +89,12 @@ architecture AI_behaviour of AI is
                     current_board <= game_board;
                 else
                     answer := min_max_move(game_board, (BOARD_SIZE - 1), AI_PLAYER);
-                    game_board(answer(1), answer(2)) <= AI_PLAYER;
+                    if answer(1) = -1 or answer(2) = -1 then
+                        report "Someone won";
+                    else
+                        game_board(answer(1), answer(2)) <= AI_PLAYER;     
+                    end if;
+
                     current_board <= game_board;
                 end if;
 
