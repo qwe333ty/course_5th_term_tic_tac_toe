@@ -9,26 +9,26 @@ z2
 cModel Technology
 dE:/modelsim-labs/lab-3-part-3
 Eai
-Z0 w1574196247
+Z0 w1574522461
 Z1 DPx4 work 20 min_max_engine_utils 0 22 eOQ?Z`dWKKCNj96=m>e7S1
 Z2 DPx4 work 11 board_utils 0 22 XBflJj5N=64<_Sg1Fo1l91
-Z3 DPx4 work 10 game_utils 0 22 M4KKZ=g9?BRhziM>l]8nc1
+Z3 DPx4 work 10 game_utils 0 22 @hHX4idjS7gRhBP<9aIXJ0
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z6 dE:/kursach
-Z7 8E:\kursach\ai.vhd
-Z8 FE:\kursach\ai.vhd
+Z7 8E:/kursach/ai.vhd
+Z8 FE:/kursach/ai.vhd
 l0
 L9
 Vnm2:>[D[3cnTQ9d>3^h>12
 !s100 3162S0ZPTBdNTNJZmCf9X3
 Z9 OP;C;10.4a;61
 32
-Z10 !s110 1574196253
+Z10 !s110 1574523235
 !i10b 1
-Z11 !s108 1574196253.000000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\kursach\ai.vhd|
-Z13 !s107 E:\kursach\ai.vhd|
+Z11 !s108 1574523235.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/ai.vhd|
+Z13 !s107 E:/kursach/ai.vhd|
 !i113 1
 Z14 o-work work -2002 -explicit -O0
 Z15 tExplicit 1
@@ -39,10 +39,10 @@ R3
 R4
 R5
 DEx4 work 2 ai 0 22 nm2:>[D[3cnTQ9d>3^h>12
-l81
+l83
 L15
-VZEYPEnLho?kGfJzDiDYW`2
-!s100 1_zQ^G@^`kdOA:LY]j`B62
+Vl4Wg82S=?RSjCiVDe1GU72
+!s100 T;mDnBHN^1EKDC0Je6NFc0
 R9
 32
 R10
@@ -93,14 +93,14 @@ R14
 R15
 Z21 nbody
 Pgame_utils
-w1574148613
+w1574523212
 R6
 8E:/kursach/course_package.vhd
 FE:/kursach/course_package.vhd
 l0
 L1
-VM4KKZ=g9?BRhziM>l]8nc1
-!s100 zhIX6OOnoILAeaLzR1Lhj3
+V@hHX4idjS7gRhBP<9aIXJ0
+!s100 [8CG`?n`XBZQb?4FY9]JX2
 R9
 32
 R10
@@ -213,11 +213,11 @@ VH^>3h0FSI21TdU<:NTlfo2
 !s100 h7NRZi=LTJ`N<L]idIoN32
 R9
 32
-R10
+Z35 !s110 1574523236
 !i10b 1
-R11
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/mme_test.vhd|
-Z36 !s107 E:/kursach/mme_test.vhd|
+Z36 !s108 1574523236.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/mme_test.vhd|
+Z38 !s107 E:/kursach/mme_test.vhd|
 !i113 1
 R14
 R15
@@ -227,18 +227,18 @@ R2
 R3
 R4
 R5
-Z37 DEx4 work 7 test123 0 22 H^>3h0FSI21TdU<:NTlfo2
+Z39 DEx4 work 7 test123 0 22 H^>3h0FSI21TdU<:NTlfo2
 l23
 L12
-Z38 VDD7bhSU1UI6`mVaVMHQ3U1
-Z39 !s100 fNLUZaG7HNWRFOWLTm[`o0
+Z40 VDD7bhSU1UI6`mVaVMHQ3U1
+Z41 !s100 fNLUZaG7HNWRFOWLTm[`o0
 R9
 32
-R10
-!i10b 1
-R11
 R35
+!i10b 1
 R36
+R37
+R38
 !i113 1
 R14
 R15

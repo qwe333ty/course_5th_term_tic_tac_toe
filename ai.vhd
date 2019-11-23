@@ -78,18 +78,21 @@ architecture AI_behaviour of AI is
 
     signal game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1);
 
+    signal isHuman : boolean := true;
+
     begin
         main_process : process (X, Y)
             variable answer : MinMaxAnswer;
             begin
-                game_board(Y, X) <= HUMAN_PLAYER;
-                if game_board(Y, X) = HUMAN_PLAYER then
-                    report "GOOOOOOOD!";
+                if isHuman then
+                    game_board(Y, X) <= HUMAN_PLAYER;
+                    current_board <= game_board;
                 else
-                    report "DOES NOT WORK :(";
+                    answer := min_max_move(game_board, (BOARD_SIZE - 1), AI_PLAYER);
+                    game_board(answer(1), answer(2)) <= AI_PLAYER;
+                    current_board <= game_board;
                 end if;
-                answer := min_max_move(game_board, (BOARD_SIZE - 1), AI_PLAYER);
-                game_board(answer(1), answer(2)) <= AI_PLAYER;
-                current_board <= game_board;
+
+                isHuman <= not isHuman;
         end process main_process;
 end AI_behaviour;
