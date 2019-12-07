@@ -1,6 +1,6 @@
 package game_utils is
 
-    constant BOARD_SIZE : natural := 4;
+    constant BOARD_SIZE : natural := 3;
 
     type CELL_STATE is (EMPTY, CROSS, ZERO);
 

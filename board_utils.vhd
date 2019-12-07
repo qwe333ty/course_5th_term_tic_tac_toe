@@ -43,84 +43,100 @@ package body board_utils is
 
     function checkColumn(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); column : natural; player : CELL_STATE)
     return boolean is
+            variable temp : boolean := false;
         begin
             for row in 1 to (BOARD_SIZE - 1) loop
                 if game_board(row, column) /= game_board((row - 1), column) then
-                    return false;
+                    temp := false;
+                    exit;
                 end if;
 
                 if row = (BOARD_SIZE - 1) and game_board(row, column) = player then
-                    return true;
+                    temp := true;
+                    exit;
                 end if;
             end loop;
-        return false;
+        return temp;
     end;
 
     function checkAllColumns(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); player : CELL_STATE)
     return boolean is
+        variable temp : boolean := false;
         begin
             for column in 0 to (BOARD_SIZE - 1) loop
                 if checkColumn(game_board, column, player) then
-                    return true;
+                    temp := true;
+                    exit;
                 end if;
             end loop;
-        return false;
+        return temp;
     end;
 
     function checkLine(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); row : natural; player : CELL_STATE)
     return boolean is
+        variable temp : boolean := false;
         begin
             for column in 1 to (BOARD_SIZE - 1) loop
                 if game_board(row, column) /= game_board(row, (column - 1)) then
-                    return false;
+                    temp := false;
+                    exit;
                 end if;
 
                 if column = (BOARD_SIZE - 1) and game_board(row, column) = player then
-                    return true;
+                    temp := true;
+                    exit;
                 end if;    
             end loop;
-        return false;
+        return temp;
     end;
     
     function checkAllLines(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); player : CELL_STATE)
     return boolean is
+        variable temp : boolean := false;
         begin
             for row in 0 to (BOARD_SIZE - 1) loop
                 if checkLine(game_board, row, player) then
-                    return true;
+                    temp := true;
+                    exit;
                 end if;
             end loop;
-        return false;
+        return temp;
     end;
 
     function checkLeftDiagonal(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); player : CELL_STATE)
     return boolean is
+        variable bln : boolean := false;
         begin
             for temp in 1 to (BOARD_SIZE - 1) loop
                 if game_board(temp, temp) /= game_board((temp - 1), (temp - 1)) then
-                    return false;
+                    bln := false;
+                    exit;
                 end if;
 
                 if temp = (BOARD_SIZE - 1) and game_board(temp, temp) = player then
-                    return true;
+                    bln := true;
+                    exit;
                 end if;
             end loop;
-        return false;
+        return bln;
     end;
 
     function checkRightDiagonal(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); player : CELL_STATE)
     return boolean is
+        variable bln : boolean := false;
         begin
             for temp in 1 to (BOARD_SIZE - 1) loop
                 if game_board((BOARD_SIZE - 1 - temp), temp) /= game_board((BOARD_SIZE - temp), (temp - 1)) then
-                    return false;
+                    bln := false;
+                    exit;
                 end if;
 
                 if temp = (BOARD_SIZE - 1) and game_board((BOARD_SIZE - 1 - temp), temp) = player then
-                    return true;
+                    bln := true;
+                    exit;
                 end if;
             end loop;
-        return false;
+        return bln;
     end;
 
     function hasWon(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); player : CELL_STATE)
@@ -140,7 +156,6 @@ package body board_utils is
 
         begin
             if hasWon(game_board, HUMAN_PLAYER) or hasWon(game_board, AI_PLAYER) then
-                report "someone won";
                 return cells;
             end if;
 
@@ -158,11 +173,7 @@ package body board_utils is
     function isCellsListEmpty(cells : Available_Cells)
     return boolean is
         begin
-            if cells(0)(0) = -1 and cells (0)(1) = -1 then
-                return true;
-            else
-                return false;
-            end if;
+        return (cells(0)(0) = -1 and cells (0)(1) = -1);
     end;
 
     function cloneGameBoard(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1))

@@ -9,10 +9,10 @@ z2
 cModel Technology
 dE:/modelsim-labs/lab-3-part-3
 Eai
-Z0 w1574527623
+Z0 w1575726890
 Z1 DPx4 work 20 min_max_engine_utils 0 22 eOQ?Z`dWKKCNj96=m>e7S1
 Z2 DPx4 work 11 board_utils 0 22 XBflJj5N=64<_Sg1Fo1l91
-Z3 DPx4 work 10 game_utils 0 22 @hHX4idjS7gRhBP<9aIXJ0
+Z3 DPx4 work 10 game_utils 0 22 M4KKZ=g9?BRhziM>l]8nc1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z6 dE:/kursach
@@ -20,13 +20,13 @@ Z7 8E:/kursach/ai.vhd
 Z8 FE:/kursach/ai.vhd
 l0
 L9
-Vnm2:>[D[3cnTQ9d>3^h>12
-!s100 3162S0ZPTBdNTNJZmCf9X3
+VJWDPZ@BJNk2Am8I9d16^d3
+!s100 G`go1gHQJWLQIU3^AdhZ30
 Z9 OP;C;10.4a;61
 32
-Z10 !s110 1574527643
+Z10 !s110 1575726895
 !i10b 1
-Z11 !s108 1574527643.000000
+Z11 !s108 1575726895.000000
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/ai.vhd|
 Z13 !s107 E:/kursach/ai.vhd|
 !i113 1
@@ -38,11 +38,11 @@ R2
 R3
 R4
 R5
-DEx4 work 2 ai 0 22 nm2:>[D[3cnTQ9d>3^h>12
-l83
-L15
-Vf]][OZ8]A0=RAbIkGibge0
-!s100 JCI8`lgPSC[9lJ09BJ1km0
+DEx4 work 2 ai 0 22 JWDPZ@BJNk2Am8I9d16^d3
+l87
+L19
+VhG>_o_CzbSZV0GX3fzlgf3
+!s100 :M?LYTLnJ?gJQ3K51VG9^2
 R9
 32
 R10
@@ -55,7 +55,7 @@ R14
 R15
 Pboard_utils
 R3
-Z16 w1574194759
+Z16 w1575718878
 R6
 Z17 8E:/kursach/board_utils.vhd
 Z18 FE:/kursach/board_utils.vhd
@@ -66,11 +66,11 @@ VXBflJj5N=64<_Sg1Fo1l91
 R9
 32
 b1
-Z19 !s110 1574527644
+R10
 !i10b 1
-Z20 !s108 1574527644.000000
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/board_utils.vhd|
-Z22 !s107 E:/kursach/board_utils.vhd|
+R11
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/board_utils.vhd|
+Z20 !s107 E:/kursach/board_utils.vhd|
 !i113 1
 R14
 R15
@@ -79,28 +79,28 @@ R2
 R3
 l0
 L42
-V>mjJJLMRgb8Y9;:oa=kl<0
-!s100 ?dOzDWT6FG2YialV7Ogje0
+V@9]2UDjf0HI@G6FdJj4hA2
+!s100 JKZ<jY<La=ge>@B5FY>^o3
 R9
 32
-R19
+R10
 !i10b 1
+R11
+R19
 R20
-R21
-R22
 !i113 1
 R14
 R15
-Z23 nbody
+Z21 nbody
 Pgame_utils
-w1574523212
+w1575013448
 R6
 8E:/kursach/course_package.vhd
 FE:/kursach/course_package.vhd
 l0
 L1
-V@hHX4idjS7gRhBP<9aIXJ0
-!s100 [8CG`?n`XBZQb?4FY9]JX2
+VM4KKZ=g9?BRhziM>l]8nc1
+!s100 zhIX6OOnoILAeaLzR1Lhj3
 R9
 32
 R10
@@ -114,10 +114,10 @@ R15
 Pmin_max_engine_utils
 R3
 R2
-Z24 w1574524848
+Z22 w1574524848
 R6
-Z25 8E:/kursach/min_max_engine_utils.vhd
-Z26 FE:/kursach/min_max_engine_utils.vhd
+Z23 8E:/kursach/min_max_engine_utils.vhd
+Z24 FE:/kursach/min_max_engine_utils.vhd
 l0
 L5
 VeOQ?Z`dWKKCNj96=m>e7S1
@@ -125,11 +125,11 @@ VeOQ?Z`dWKKCNj96=m>e7S1
 R9
 32
 b1
-R19
+Z25 !s110 1575726896
 !i10b 1
-R20
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/min_max_engine_utils.vhd|
-Z28 !s107 E:/kursach/min_max_engine_utils.vhd|
+R11
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/min_max_engine_utils.vhd|
+Z27 !s107 E:/kursach/min_max_engine_utils.vhd|
 !i113 1
 R14
 R15
@@ -143,25 +143,25 @@ Vn[X=B<7`28OEBzDFF02Ah1
 !s100 4P6f:F`@eD7IcP_?ao=YJ2
 R9
 32
-R19
+R25
 !i10b 1
-R20
+R11
+R26
 R27
-R28
 !i113 1
 R14
 R15
-R23
+R21
 Eminmaxengine
-Z29 w1574192842
+Z28 w1574192842
 R1
 R2
 R3
 R4
 R5
 R6
-Z30 8E:/kursach/MinMaxEngine.vhd
-Z31 FE:/kursach/MinMaxEngine.vhd
+Z29 8E:/kursach/MinMaxEngine.vhd
+Z30 FE:/kursach/MinMaxEngine.vhd
 l0
 L9
 V1hHc7e4_MP;XADeb;nK[D2
@@ -171,8 +171,8 @@ R9
 R10
 !i10b 1
 R11
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/MinMaxEngine.vhd|
-Z33 !s107 E:/kursach/MinMaxEngine.vhd|
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/MinMaxEngine.vhd|
+Z32 !s107 E:/kursach/MinMaxEngine.vhd|
 !i113 1
 R14
 R15
@@ -192,30 +192,30 @@ R9
 R10
 !i10b 1
 R11
+R31
 R32
-R33
 !i113 1
 R14
 R15
 Etest123
-Z34 w1574194546
+Z33 w1574194546
 R1
 R2
 R3
 R4
 R5
 R6
-Z35 8E:/kursach/mme_test.vhd
-Z36 FE:/kursach/mme_test.vhd
+Z34 8E:/kursach/mme_test.vhd
+Z35 FE:/kursach/mme_test.vhd
 l0
 L9
 VH^>3h0FSI21TdU<:NTlfo2
 !s100 h7NRZi=LTJ`N<L]idIoN32
 R9
 32
-R19
+R25
 !i10b 1
-R20
+Z36 !s108 1575726896.000000
 Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/mme_test.vhd|
 Z38 !s107 E:/kursach/mme_test.vhd|
 !i113 1
@@ -234,9 +234,9 @@ Z40 VDD7bhSU1UI6`mVaVMHQ3U1
 Z41 !s100 fNLUZaG7HNWRFOWLTm[`o0
 R9
 32
-R19
+R25
 !i10b 1
-R20
+R36
 R37
 R38
 !i113 1

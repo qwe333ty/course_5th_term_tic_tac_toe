@@ -1,11 +1,13 @@
-E:/kursach/min_max_engine_utils.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/kursach/min_max_engine_utils.vhd
+E:/kursach/ai.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/kursach/ai.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
 -- Loading package game_utils
 -- Loading package board_utils
--- Compiling package min_max_engine_utils
--- Compiling package body min_max_engine_utils
 -- Loading package min_max_engine_utils
+-- Compiling entity AI
+-- Compiling architecture AI_behaviour of AI
 
 } {} {}} E:/kursach/mme_test.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/kursach/mme_test.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -18,18 +20,19 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity Test123
 -- Compiling architecture beh of Test123
 
+} {} {}} E:/kursach/min_max_engine_utils.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/kursach/min_max_engine_utils.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package game_utils
+-- Loading package board_utils
+-- Compiling package min_max_engine_utils
+-- Compiling package body min_max_engine_utils
+-- Loading package min_max_engine_utils
+
 } {} {}} E:/kursach/course_package.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/kursach/course_package.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Compiling package game_utils
-
-} {} {}} E:/kursach/board_utils.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/kursach/board_utils.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package game_utils
--- Compiling package board_utils
--- Compiling package body board_utils
--- Loading package board_utils
 
 } {} {}} E:/kursach/MinMaxEngine.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/kursach/MinMaxEngine.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -41,5 +44,13 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package min_max_engine_utils
 -- Compiling entity MinMaxEngine
 -- Compiling architecture MinMaxEngine_behaviour of MinMaxEngine
+
+} {} {}} E:/kursach/board_utils.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/kursach/board_utils.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package game_utils
+-- Compiling package board_utils
+-- Compiling package body board_utils
+-- Loading package board_utils
 
 } {} {}}
