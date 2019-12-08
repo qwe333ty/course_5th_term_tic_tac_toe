@@ -24,6 +24,9 @@ package min_max_engine_utils is
     function evaluateBoard(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1))
     return integer;
 
+    function min_max_move(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); depth : natural; player : CELL_STATE)
+    return MinMaxAnswer;
+
 end package min_max_engine_utils;
 
 package body min_max_engine_utils is
@@ -114,6 +117,8 @@ package body min_max_engine_utils is
                             score := -1;
                         end if;
                     end if;
+
+                    next evaluation_loop;
                 end if;
 
                 if game_board(coordinates(0), coordinates(1)) = AI_PLAYER then
@@ -160,6 +165,67 @@ package body min_max_engine_utils is
             cells := getRightDiagonalPoints(game_board);
             score := score + evaluateAvailableCells(game_board, cells);
         return score;
+    end;
+
+    function min_max_move(game_board : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1); depth : natural; player : CELL_STATE)
+    return MinMaxAnswer is
+
+        variable nextMoves : Available_Cells;
+        variable move : Cell_Coordinates;
+
+        variable bestScore : integer;
+
+        variable bestRow : integer := -1;
+        variable bestColumn : integer := -1;
+
+        variable tempAnswer : MinMaxAnswer;
+        variable answer : MinMaxAnswer;
+
+        variable boardCopy : Board(0 to BOARD_SIZE - 1, 0 to BOARD_SIZE - 1);
+
+        begin
+            nextMoves := generateMoves(game_board);
+
+            if player = AI_PLAYER then
+                bestScore := integer'low;
+            else
+                bestScore := integer'high;
+            end if;
+
+            if isCellsListEmpty(nextMoves) or depth = 0 then
+                bestScore := evaluateBoard(game_board);
+            else
+                boardCopy := cloneGameBoard(game_board);
+                for temp in 0 to (nextMoves'length - 1) loop
+                    move := nextMoves(temp);
+                    if move(0) = -1 and move(1) = -1 then
+                        exit;
+                    end if;
+                    
+                    boardCopy(move(0), move(1)) := player;
+                    if player = AI_PLAYER then
+                        tempAnswer := min_max_move(boardCopy, depth - 1, HUMAN_PLAYER);
+                        if tempAnswer(0) > bestScore then
+                            bestScore := tempAnswer(0);
+                            bestRow := move(0);
+                            bestColumn := move(1);
+                        end if;
+                    else
+                        tempAnswer := min_max_move(boardCopy, depth - 1, AI_PLAYER);
+                        if tempAnswer(0) < bestScore then
+                            bestScore := tempAnswer(0);
+                            bestRow := move(0);
+                            bestColumn := move(1);
+                        end if;
+                    end if;
+                    boardCopy(move(0), move(1)) := EMPTY;
+                end loop;
+            end if;
+
+            answer(0) := bestScore;
+            answer(1) := bestRow;
+            answer(2) := bestColumn;
+        return answer;
     end;
 
 end package body min_max_engine_utils;

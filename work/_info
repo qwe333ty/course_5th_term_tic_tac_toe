@@ -9,8 +9,8 @@ z2
 cModel Technology
 dE:/modelsim-labs/lab-3-part-3
 Eai
-Z0 w1575726890
-Z1 DPx4 work 20 min_max_engine_utils 0 22 eOQ?Z`dWKKCNj96=m>e7S1
+Z0 w1575797339
+Z1 DPx4 work 20 min_max_engine_utils 0 22 MSCaTeLbJzWZTz0FZEQfH2
 Z2 DPx4 work 11 board_utils 0 22 XBflJj5N=64<_Sg1Fo1l91
 Z3 DPx4 work 10 game_utils 0 22 M4KKZ=g9?BRhziM>l]8nc1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -24,9 +24,9 @@ VJWDPZ@BJNk2Am8I9d16^d3
 !s100 G`go1gHQJWLQIU3^AdhZ30
 Z9 OP;C;10.4a;61
 32
-Z10 !s110 1575726895
+Z10 !s110 1575800073
 !i10b 1
-Z11 !s108 1575726895.000000
+Z11 !s108 1575800073.000000
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/ai.vhd|
 Z13 !s107 E:/kursach/ai.vhd|
 !i113 1
@@ -39,10 +39,10 @@ R3
 R4
 R5
 DEx4 work 2 ai 0 22 JWDPZ@BJNk2Am8I9d16^d3
-l87
+l24
 L19
-VhG>_o_CzbSZV0GX3fzlgf3
-!s100 :M?LYTLnJ?gJQ3K51VG9^2
+VCeUSAz6Dz<SHNSaEbPnRZ3
+!s100 =bY?m^N1j>>L@;iz]T@z:0
 R9
 32
 R10
@@ -93,7 +93,7 @@ R14
 R15
 Z21 nbody
 Pgame_utils
-w1575013448
+w1575749821
 R6
 8E:/kursach/course_package.vhd
 FE:/kursach/course_package.vhd
@@ -114,22 +114,22 @@ R15
 Pmin_max_engine_utils
 R3
 R2
-Z22 w1574524848
+Z22 w1575799998
 R6
-Z23 8E:/kursach/min_max_engine_utils.vhd
-Z24 FE:/kursach/min_max_engine_utils.vhd
+Z23 8E:\kursach\min_max_engine_utils.vhd
+Z24 FE:\kursach\min_max_engine_utils.vhd
 l0
 L5
-VeOQ?Z`dWKKCNj96=m>e7S1
-!s100 Lef1`7R_Y`o0W3m^gn]Jf2
+VMSCaTeLbJzWZTz0FZEQfH2
+!s100 OdzcBNf:ao[QVInjie^``1
 R9
 32
 b1
-Z25 !s110 1575726896
+Z25 !s110 1575800074
 !i10b 1
 R11
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/min_max_engine_utils.vhd|
-Z27 !s107 E:/kursach/min_max_engine_utils.vhd|
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\kursach\min_max_engine_utils.vhd|
+Z27 !s107 E:\kursach\min_max_engine_utils.vhd|
 !i113 1
 R14
 R15
@@ -138,9 +138,9 @@ R1
 R3
 R2
 l0
-L29
-Vn[X=B<7`28OEBzDFF02Ah1
-!s100 4P6f:F`@eD7IcP_?ao=YJ2
+L32
+V;dAnG`NnRC7fm<;2]gPiY1
+!s100 JKzgdF^2WOe[C=2Rl6cco1
 R9
 32
 R25
@@ -215,7 +215,7 @@ R9
 32
 R25
 !i10b 1
-Z36 !s108 1575726896.000000
+Z36 !s108 1575800074.000000
 Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/mme_test.vhd|
 Z38 !s107 E:/kursach/mme_test.vhd|
 !i113 1
@@ -227,11 +227,11 @@ R2
 R3
 R4
 R5
-Z39 DEx4 work 7 test123 0 22 H^>3h0FSI21TdU<:NTlfo2
+DEx4 work 7 test123 0 22 H^>3h0FSI21TdU<:NTlfo2
 l23
 L12
-Z40 VDD7bhSU1UI6`mVaVMHQ3U1
-Z41 !s100 fNLUZaG7HNWRFOWLTm[`o0
+VDD7bhSU1UI6`mVaVMHQ3U1
+!s100 fNLUZaG7HNWRFOWLTm[`o0
 R9
 32
 R25
@@ -263,3 +263,138 @@ R15
 FE:\kursach\test_generate_moves.vhd
 w1574025201
 8E:\kursach\test_generate_moves.vhd
+Etest_ai
+Z39 w1575796897
+R1
+R2
+R3
+R4
+R5
+R6
+Z40 8E:/kursach/ai_test.vhd
+Z41 FE:/kursach/ai_test.vhd
+l0
+L9
+VdozYl447QVG`eQa]`fhS<2
+!s100 ncVP9]Cn68^C[M70Y^bZl1
+R9
+32
+Z42 !s110 1575797376
+!i10b 1
+Z43 !s108 1575797376.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/kursach/ai_test.vhd|
+Z45 !s107 E:/kursach/ai_test.vhd|
+!i113 1
+R14
+R15
+Atest_ai_behaviour
+R1
+R2
+R3
+R4
+R5
+DEx4 work 7 test_ai 0 22 dozYl447QVG`eQa]`fhS<2
+l31
+L12
+V4EM3InW@_z1oiOc6zQ]WM0
+!s100 z=[@kb:hOLFRnM2l6N6NE2
+R9
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 1
+R14
+R15
+Etest_entity
+Z46 w1575799306
+R1
+R2
+R3
+R4
+R5
+R6
+R40
+R41
+l0
+L30
+V?URn?kc`DgnXLdQmXUljA0
+!s100 9C=NYm2:36g=Q[Qk2NQ4z2
+R9
+32
+R25
+!i10b 1
+R36
+R44
+R45
+!i113 1
+R14
+R15
+Atest_entity_behaviour
+R1
+R2
+R3
+R4
+R5
+Z47 DEx4 work 11 test_entity 0 22 ?URn?kc`DgnXLdQmXUljA0
+l47
+L33
+Z48 VYD8eU3T4AnA[TS=BK1?`91
+Z49 !s100 56Jg2i=>7KT5VNIO`B<o41
+R9
+32
+R25
+!i10b 1
+R36
+R44
+R45
+!i113 1
+R14
+R15
+Etest_func
+R46
+R1
+R2
+R3
+R4
+R5
+R6
+R40
+R41
+l0
+L9
+VCheAiomU22HDcV0WYFW>D3
+!s100 WJiA1E=mGDPFP72>UW01]0
+R9
+32
+R25
+!i10b 1
+R36
+R44
+R45
+!i113 1
+R14
+R15
+Atest_func_behaviour
+R1
+R2
+R3
+R4
+R5
+Z50 DEx4 work 9 test_func 0 22 CheAiomU22HDcV0WYFW>D3
+l17
+L16
+Z51 VOcUe::ClbYDVgVYWf<`>A0
+Z52 !s100 4_:zBMcF3CR>aTXThR1ko0
+R9
+32
+R25
+!i10b 1
+R36
+R44
+R45
+!i113 1
+R14
+R15
